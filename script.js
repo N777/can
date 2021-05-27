@@ -16,8 +16,7 @@ var squarePosition_y = 0;
 
 function drawFrame() {
 	// Очистить холст
-    canvas.width = document.documentElement.clientWidth;
-    canvas.height = document.documentElement.clientHeight;
+    
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	
 	// Вызываем метод beginPath(), чтобы убедиться,
@@ -82,7 +81,7 @@ function clearBalls() {
 function drawFrame() {
     // Очистить холст
     canvas.width = document.documentElement.clientWidth;
-        canvas.height = document.documentElement.clientHeight;
+        canvas.height = document.documentElement.clientHeight*0.92;
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     // Вызываем метод beginPath(), чтобы убедиться,

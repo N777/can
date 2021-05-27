@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-          margin: 0;
-          padding: 8px;
-        height: 99vh;
-        width: 99vw;
+       
+       html, body {
+        overflow-x: hidden;
+        height: 100vh;
+        margin: 0;
       }
-      canvas {
-        height: 95%;
-        width: 100%;
-        display: block;
+        
+      .but {
+        display: flex;
+        justify-content: space-around;
       }
       button {
+        width: 49%;
         height: 5%;
         background-color: #4c4eaf; /* Green */
         border: none;
@@ -33,7 +34,7 @@
   </head>
   <body>
     <canvas id="drawingCanvas"></canvas>
-    <div>
+    <div class = "but">
       <button onclick="stopBall()">Остановить</button>
       <button onclick="moveBall()">Возобновить</button>
     </div>
