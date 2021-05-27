@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+          margin: 0;
+          padding: 8px;
+        height: 99vh;
+        width: 99vw;
+      }
+      canvas {
+        height: 95%;
+        width: 100%;
+        display: block;
+      }
+      button {
+        height: 5%;
+        background-color: #4c4eaf; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="drawingCanvas"></canvas>
+    <div>
+      <button onclick="stopBall()">Остановить</button>
+      <button onclick="moveBall()">Возобновить</button>
+    </div>
+  </body>
+</html>
